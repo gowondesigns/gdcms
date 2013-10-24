@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dwH//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+hRv//syh//7Jmv/+fw///nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//qFQ//707P/+9Oz//pY7//52AP/+dgD//nYA//52AP/+dgD//nYA//53AP/+dwD//ncA//53AP/+dwD//ngB//7Opf/+9ez//vXs//6/h//+eAL//nYA//52AP/+dgD//nYA//52AP/+dwD//ncA//53AP/+dwD//ncA//6hT//+9Ov//vXs//717P/+7uH//oso//53AP/+dgD//nYA//52AP/+dgD//ncA//53AP/+eAL//oYc//61dP/+8OX//vXs//7OpP/+3sP//vXs//7jy//+ljz//ngC//52AP/+dgD//nYA//53AP/+jSn//uXQ//7y5//+9ez//vXs//7Wsv/+fw///osm//7n1P/+9ez//vPq//7cv//+xJH//nkF//52AP/+dwD//pQ4//707P/+9Ov//uXP//6ycP/+fxD//q9q//6hUf/+iCD//s6j//7x5//+9Oz//vDl//57CP/+dgD//nYA//5/D//+lz3//oki//54BP/+dwH//rV2//707P/+8+r//pEx//53Af/+hx///qZY//61df/+eQT//nYA//52AP/+dgD//nYA//52AP/+dwD//ncA//6uaf/+9Oz//vLo//6OLf/+dwD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+ewf//qNU//6VOv/+dwD//ncA//53AP/+dgD//nYA//52AP/+dgD//ncA//53AP/+dwD//nYA//52AP/+dgD//ngD//55A//+eAP//ncA//53AP/+dgD//nYA//52AP/+dgD//nYA//52AP/+dgD//ncA//52AP/+dgD//nYA//53AP/+dwD//ncA//53AP/+dwD//nYA//52AP/+dgD//nYA//52AP/+fAv//nsI//57CP/+egj//noI//56CP/+ewj//nsI//57CP/+ewj//nsI//56CP/+egj//noI//56CP/+gRT4AACsQQAArEEAAKxBAACsQQAArEEAAKxBAACsQQAArEEAAKxBAACsQQAArEEAAKxBAACsQQAArEEAAKxBAACsQQ==" />
+  <title>Gowon Designs CMS 1 Documentation</title>
+
+<style type="text/css">
+@media screen
+{
+body { font: .9em "Trebuchet MS", Arial, Sans-Serif; margin: 0px; }
+h1,h2 { margin: 0 0 2px 0; font-size: 2em; }
+h1 sup { font-size: .6em; }
+h3 { margin: 0 0 2px 0; font-size: 1.5em; }
+hr { display: none; }
+a { color: #036DA7; background: inherit; }
+li {margin-top: 5px;}
+code { font: 1em "Courier New", Courier, monospace; padding: 0.5em; background-color: #ddd; margin: 1px; display: block; }
+em {text-decoration: underline;}
+#wrap { width: 90%; margin: 30px auto; }
+
+.printonly { display: none; }
+.readme { background: #FFFED1; padding: 15px; border: 2px solid #E5E4A0; margin: 10px 15px 0 15px; color: #4B4000; }
+.header { background: #E8F0FF; padding: 15px; border: 2px solid #4C6199; margin: 10px 15px 0 15px; color: #4C6199; overflow:hidden; cursor:pointer; }
+.content{ background: #fff; margin: 0 20px 0 20px; color: #4B4000; border-bottom: 1px solid #A5D5E7; border-left: 1px solid #A5D5E7; border-right: 1px solid #A5D5E7; overflow:hidden; position:relative; padding:10px 5px 5px 5px; }
+}
+
+@media print
+{
+.content { display: block !important; margin: 0 20px 40px 20px; }
+.printonly { font: 1em "Courier New", Courier, monospace; }
+code { font: 1em "Courier New", Courier, monospace; padding: 0.5em; margin: 1px; display: block; }
+a { color: #036DA7; background: inherit; }
+}
+</style>
+<script type="text/javascript">
+function toggle(div) {
+	if (document.getElementById(div).style.display=='') {
+		document.getElementById(div).style.display = 'none';
+		return
+	} document.getElementById(div).style.display = ''; 
+}	
+</script>
+</head>
+<body onload="toggle('toc');toggle('d1');toggle('d2');toggle('d3');toggle('d4');toggle('d5');toggle('d6');toggle('d7');">
+
+
+<div class="readme">
+    <a name="header"></a>
+		<h1><a href="http://www.gowondesigns.com/"><img style="vertical-align: middle;" alt="GDCMS CMS" src="data:image/gif;base64,R0lGODlheAB4APfZAAJ4//D3/wN5/zOS/6XP/2at/wR5/+72/wV6/wZ6/wd7/+/2/wl8/+z1/wh7/wt9//H4/wp8/wx9/xGA/w5+//L4//P5/w1+/+v0/9jq/+by/zWT/xKB/+r0/8rj/xCA/zuW/zqW/x2G/yqN/+fy/+jz/+Tx/9Ln/+Xx/yaL/9rr/w9//2Os/xqF/4S9/+nz/8vj/2Cq/8ji/0Wc/+Du/9zs/+Hv/9Hm/7/d/87l/0uf/06h/93t/2Gr/xSC/5rJ/8ni/7na//f7/8Xg/1yo/6jR/7vb/6PO/5fI/8fh/9Po/yGJ/xOB/4G8/67U/97t/7LW/xyG//z9/6rS/xuF/5HE//X6/8zk/2Kr/xaD/xiE/22x/4W+/5LF/yCI/ymN/0CZ/7TX/2uw/5vK/0ed/6/U/yuO/6DM/y2P/yKJ/9nr/3m4/y+Q/xWC/0yg/xmE/43C/4jA/zGR/0Sb/5zK/zST/1Kj/zeU/9Dm/5DE/4rB/0Ob/326/5jI/9fq/0+h/1Oj/ySK/4K8/3a2/77c/1+q/8Dd//b6/zCR/7PW/////xeD/ziV/26y/4vB/zyX/5/M/1im/73c/6LN/x6H/0ac/1uo/4e//0Ga/x+I/3q4/yWL/z+Z/9bp//T5/zmV/9/u/1qn/6zT/+Pw/8He//r8/02g/3+7/2+y/3S1/7HV/6bQ/83k/7ra//j7/1el/5bH/9vs/z6Y/+Lw/2yx/7fZ/3K0/3i3/8bh/zKS/1mm/2qw/4O9/yiM/0Ka/8/l/6TO/3W1/0me/5nJ/y6Q/4zC/8Pf/57L//n8/53L/yyO/3O0/9Xp/yOK/6HN/2eu/7zb/0qe/8Tg/9To//7+/7bY/wF4/+31/wB3/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAANkALAAAAAB4AHgAQAj/ALMJHEiwoMGDCBMqXMiwocOHECNKnEixYkUC2DJq3Mixo8ePIEOKHEmSYwCLGD0CyGiNI4CWIq29NABAAIKbCBLgvJmgZwIB1mCyXFmyaMeTF40q9WjNgIIIDBQkePDAgAGhIWUG3Rr0I0ysR1GC7IoNwEuWXIsKgNLgmtu3cN9CSJLrKtGRTRGAlXn2I1KKKTs2xSaoRFy3B64FWHANRY4wg8ikeCDhAoUVDmR+kLABB+O4ASpc0SXiroCaDLyA2ILDwoHEh0ErYWRNAMi/EwNz5DsDQuzfwN++gPMGm22NBhIEbREEwufgcV8fWMDYxoIXRkIc9yu26FcGEahG/7BqAIGCETBgQ7/GTM1r6AdwfcKGwMFuoGSN4paoeylas6dpJRM2BuzQgHrrXbOABsUw8IACAfo30n4R9bdbfhLKJEAEPSwWXGJTUGCcAdiAJeFt3Z2o4oosbkQhRBa2KOOME6ZI4404hmXRjjz26OOPQAYpJJBSwPHJAEgmqeSSTDbp5JNQRimllDrUwmOMOWYp44sPYTmWf9bcVJ4AQAmQgAMOKIAATVqGxKVDXqrIVVNWYTNANdPF9toNBUgwllYlmnghhibZ6JIB+BF1l1ErIfFCghBIwkFQyrEkkgMrsDEDICxwUcUuS2zn0ZsNebmSCxggmKBcMrBAFFAlIv+6UZgKcCDBaVEEk4Frqx4WwAkh9DWqoRoJ2NJWApCYwAQh9HBGEiQ8l6AKvmgUAQs5SBucBTwcsccDJUYQYFokkcpQnF7NamlGNSUrgiG+9RrXAhYUkQYFN7GkgKD+mbuQqQIaJaBZMj3gghAJHoCBE2ZgI0ECAJBY21U0+qsQujJaI9UDPRyiLVwLJNFLmzoCRvLJLVqcEMYot4zijhnkUcDMNNds880456zzzjz3zDMtkKg85NBEF2300UgnrfTSTDftdEInuCy1UZTsyPLUWAt90NVYS621QVe/RChe5CWggJpk4uTTVQPyq9KKXxfENYthJuBgBBFcIMEDDiz/GuhXWXXltpvE4qhhVAyAMQYQT7xwQAA1yDBJDG1o7DZfYo/NLrnDJgVmS2bV9FLmW50Fxg2q6vnDBIOXFNToL5vM1OtkYi5U6xsZwMqqEHQyg04RLrVVjZ4L1pIYhvwiAzSiHIFEE7bYsYEWFySwkU0Us+TAJmE8CtwBQgQxQYm1J5sAxQgwIAcfhGRgQgmPX5OnYtPcUVPsuYFEIqq9vrYAKFAgQgvAs5LaZMQHI3jGDyQxCU3oYBES00tGFPAFQchAXm8JQCdAMLi4EcRLybJE6jB4DQsAgQgM+BvgrHE+8yDiGAci4bx4sIMOFk4jAkhBEbrwA2Cswgg2QJj8/2SIAheQiCXW8wIsGvCx3xygAteggQcGsQQqRGAREsCdRjw4EC/NCSw2ccAEfLCCFmBiCiYYYWwagIQEZCEPbYHPAfCwhkDoxDgMyMyFSsJFgXiRK2YpC7tgZbxMOCNeMoRLAFRQCADopT4Vu+GKBOCAnkygD1aQ4QIOoAct5DEjZBIWi/qYjT8OSCmJAkoCYpDJVSmsDxP4gAOSFRRRbUmSnPsSSES3iStAET41wAJ9ECBKHJFybnJKgA94UYoP1aARJWrZMVGmsZ5wIgNSQMY1SiCFDkCAGiQARQkSEQWvSbJr6JwmOtdZsvyx850ZUSc82UnKa/hpnuh8xNP2yf/PfvrznwANqEAHStCCGvSgCE2oQhfK0IYWLQb4RCcBdlSEiK7TAue0aJvkqVFzFq+jLuPojARXotCZ9KSiS+cNRUkwvwVuJmeTytnMJtOZjs6lTLnlR/Gixd20izy20QqirFJM75xIpFqKWE7EdJOzVRKnKEMqXk4EALtRRm9UgapXjjWno2Y0XUWB0Glq14IBNKELeqADF4jwBfuccnYEy2Wx5FqoneZIJlfhgB3KYIIYIuYAHbgCC6igVUCKLXA2tKtSyMLVL5KpBXFAQRPfUgEPYMJ6LaLrFm94LMFYKi0k7QgCfoACNcIFAkHQAlC0WpJ2uU2qu1GXfz4gDdP/njYWZDhfIHlKyOu9tZ388UqyajcxWxblATiwLWUJ8QW9ZI+1swIdZkUCW5YwIQqZqIMZspAFDjChsySpqiWesJ4FxWECL1FAoHZbrAmkIAaNqEIrhoAHGmiABBjIAQhYC1tHYuMWGFDMARpgBU904ACzuEEiuiAGWQTiAtiYwAoYYBUJWuMCG/BAgH+zACC4AQHFQpRUBMCAEWAhDCcwgWKAEwA/BEursB0MHzYMHcZoAAbJ2IIyGHCBB1CgJgjgADaaQQclNKAtGGgADVTxBwpUpVg6YQEBTtCBAPRqARmgDYwluZJTJBLLjtgAXwJFIAAowAAUiEBGIlAbgimA/wIhMIIGlMthNXCQcIplFzaWYZhEyi8AlyDGKWvCpozYjQE8BsAGILEARCayBpxIrOw8YpsdaMDPcDkADVDBBJaIik4AQAMUJiuv16hgBtHkTp6jWYkDuaICB7AApgHriEppJGLYEMEwSIDB13SgATAYwhEK4IYBsCEF0K2uRj5AAWtIoA0pmEMkLoEDFfCAiXR+ywFGgQUQb+UNmniCo4MDAQjk4Ax/eMB4iAmgw1KXywACZGYiloAIpKESLvDAEFflAUrI5A43gHWCbFCGV+ArTSnt11eHNysHPIADE5CABBjAgUj4YZMJQkEhtpBtC5BCBwdXDuhqorl3r9qz+v8aD1GCIrElVCGO8IE5cCowBEBArCeRXLXguEqSpiRABFP4JaZtwAUfpNq/Op208Nb1FZsgOhRz/rIShIGAH4PYmF/1T1V/YgBEwEDo/TPGBrARFeMm3Z2zK0vrQneazIXOC0HwhLwWwIM6OAxRDM+50gfV09wFiGAjOAHYyU2CPWDjzBDTUN/5iMvXTZXn0QUACN5T4w6sgT4RUNNKIkbUGVVXs0Y5jQE+0ARFyPwwjwMCCMiePS0pm0ZmHoEThOjEBozh1qnO0utn5JQPpML0wIGACuZA5sUr/OQ0MtMEomECKx/mQBbwAIRDmnUaTWAHPTDFBtAABh3IIQSPEMFJCkRgdtdXH6SePz/6U6b+9cOt/e73KvLjf/bg0p9ku7//++evfxWR0gn9pyWHYDXTFYAtQgUZ4FAKuIAM2IAO+IAQGIESyE8BAQA7" width="120" height="120" /></a>
+    Gowon Designs CMS<sup>1</sup> Documentation</h1>
+		
+		
+		<p>Welcome to <a href="http://www.gowondesigns.com/">Gowon Designs CMS</a> - a single file, template independant, <a href="http://www.php.net/">PHP</a> and <a href="http://www.mysql.com/">MySQL</a> powered, standards valid <a href="http://en.wikipedia.org/wiki/Web_content_management_system">Content Management System</a><span class="printonly"> ( http://en.wikipedia.org/wiki/Web_content_management_system )</span>. GDCMS empowers your website with dynamic pages, dynamic menus, multi-user interface, file manager, and articles with comments. It is able to work with any existing XHTML template with little tweaking. There is an included guided installation to make setting up even easier.</p>
+		
+			<p><b>Before installing, please check that your server meets the minimum system requirements:</b></p>
+			<p><a href="http://www.apache.org/">Apache</a><span class="printonly"> ( http://www.apache.org/ )</span> Server<br />
+			<a href="http://www.php.net/">PHP</a><span class="printonly"> ( http://www.php.net/ )</span>: Hypertext Preprocessor, version 4.x or greater<br />
+			<a href="http://www.mysql.com/">MySQL</a><span class="printonly"> ( http://www.mysql.com/ )</span> database, version 3.23 or greater</p>
+			<p>Apache, MySQL and PHP are all Open Source applications and freely available. They come preinstalled on Mac OS X 10.2.8 and later; they can be installed both on Windows and Linux OS (detailed info can be found on their respective websites) and they form the most widely used database server setup on the Internet today. For best result in a local server environment though, we suggest that you use a <a href="http://en.wikipedia.org/wiki/List_of_AMP_Packages">dedicated server stack</a><span class="printonly"> ( http://en.wikipedia.org/wiki/List_of_AMP_Packages )</span> (applications bundle): LAMP (Linux), MAMP (Mac) and XAMPP (Windows) are the recommended stacks at this time.</p>
+			<p>To view directions for each step, click on the headers. <b>Please review every section.</b></p>
+</div>
+
+<div id="toc">
+<div class="header" title="Table of Contents"><h1>Table of Contents</h1></div>
+
+
+<div class="content">
+<ul>
+<li><a href="#1">Uploading Files and Installation</a></li>
+<li><a href="#2">Working With Templates</a></li>
+<li><a href="#3">The Administration Panel</a></li>
+<li><a href="#4">Managing Users</a></li>
+<li><a href="#5">Using Menus</a></li>
+<li><a href="#6">Customizing Articles</a></li>
+<li><a href="#7">Extra Content Areas</a></li>
+<li><a href="#footer">Additional Info</a></li>
+</ul>
+
+</div>
+</div>
+
+<div class="header" title="Putting GDCMS onto your server" onclick="toggle('d1')"><h1><a name="1">Uploading Files and Installation</a></h1></div>
+
+
+<div class="content" id="d1">
+<ol>
+<li><b>Copy all the files</b> from the GDCMS package to your server and <a href="http://en.wikipedia.org/wiki/CHMOD">CHMOD</a><span class="printonly"> ( http://en.wikipedia.org/wiki/CHMOD )</span> 775 the core.php and index.php files.<br />
+  If you cannot CHMOD the files, you may have to do a manual installation.</li>
+<li><b>Run install.php</b>.</li>
+<li><b>Complete the steps</b> in the install.php file; it will guide you through an automatic or manual installation.</li>
+<li><b>Delete install.php</b> after the script has been installed successfully to be safe.</li>
+<li><b>Done!</b> You are ready to go! Login to start adding content and managing your site default username is <b>test</b> and password is <b>test</b> (See <a href="#3"><em>The Administration Panel</em></a>)</li>
+</ol>
+
+<p>Multiple instances of GDCMS can be ran on the same server, but they must be located in different folders and have different database table prefixes in order to run properly.</p>
+
+</div>
+
+
+<div class="header" title="Creating, modifying, and changing templates" onclick="toggle('d2')"><h1><a name="2">Working With Templates</a></h1></div>
+
+
+<div class="content" id="d2">
+<h2>Creating Templates</h2>
+<p>It's very easy to create your own GDCMS templates, and it is really simple to turn nearly any pre-existing template into a GDCMS-ready template. 
+All templates consist of an <b>index.php</b> file that may link to other external files (StyleSheets, images, etc.). If you are modifying a pre-existing template and it uses an <b>index.html</b> file, just rename it.</p>
+
+<h3>Required Functions</h3>
+<ul>
+<li><code>&lt;?php session_start(); include("core.php"); ?&gt;</code>
+This piece of code <b>must</b> be included  on the <b>FIRST LINE</b> of your template file. This code initializes GDCMS and is needed to run.
+</li>
+
+<li><code>&lt;?php content(); ?&gt;</code>
+This function is needed to display the main content generated by GDCMS. This should be placed where you want the main content to go, but it can be placed anywhere in your script.</li>
+</ul>
+
+<h3>Optional Functions</h3>
+
+<ul>
+<li><code>&lt;?php title('&lt;SEPERATOR&gt;'); ?&gt;</code>
+This is the internal title function. It is used to generate dynamic titles and meta keywords and descriptions. The optional seperator argument can be used to change the seperating characters between your site's title and slogan.</li>
+<li><code>&lt;?php value('&lt;VALUE&gt;'); ?&gt;</code>
+The <b>value();</b> function allows you to display values set in your System Settings. This includes <b>title, slogan, version, site_email</b>.</li>
+<li><code>&lt;?php menu('&lt;NAME&gt;'); ?&gt;</code>
+This displays the dynamic menus created by GDCMS. You can use multiple menus on the same page; just select the name of the menu (See <a href="#5"><em>Using Menus</em></a>).
+</li>
+<li><code>&lt;?php breadcrumbs(); ?&gt;</code>
+This creates content <a href="http://en.wikipedia.org/wiki/Breadcrumb_(navigation)">breadcrumb navigation trail</a><span class="printonly"> ( http://en.wikipedia.org/wiki/Breadcrumb_(navigation) )</span>.
+</li>
+<li><code>&lt;?php search(); ?&gt;</code>
+Thi creates the search bar. The display of the search bar can be completely manipulated through CSS.</li>
+<li><code>&lt;?php login(); ?&gt;</code>
+This creates a dynamic link to the Admin Panel. The text of the link will display "Login"; when the user logs in it will change to "Admin".</li>
+<li><code>&lt;?php extra('&lt;NAME&gt;'); ?&gt;</code>
+This is used to create extra content sections in your template. The name establishes the space, and all extra content made to work in that named space will display there (See <a href="#7"><em>Extra Content Areas</em></a>).
+</li>
+</ul>
+
+<p>These can all be used multiple times within your template with no problems, though the <b>content();</b> function should only need to be used once.
+</p>
+
+<h2>Changing Templates</h2>
+To change your template, all you need to do is <b>replace</b> your current index.php file with the index.php file of the new template you wish to use.
+
+<p>All of the content generated by GDCMS is intended for <a href="http://www.w3.org/MarkUp/#xhtml1"><b>XHTML Strict</b></a><span class="printonly"> ( http://www.w3.org/MarkUp/#xhtml1 )</span> and <a href="http://www.w3.org/MarkUp/#xhtml1"><b>Transitional</b></a> designs. <b>When selecting and creating templates, it is always a good idea to have Standards Valid designs.</b></p>
+
+</div>
+
+
+<div class="header" title="Learning the ins and outs of the Admin Panel" onclick="toggle('d3')"><h1><a name="3">The Administration Panel</a></h1></div>
+
+
+
+<div class="content" id="d3">
+
+<h2>Accessing the Administration Panel</h2>
+<p>You can get to the access panel by typing <b>?admin</b> at the end of your website's URL. If your website is <b>http://www.mywebsite.com/</b>, then the admin panel would be located at <b>http://www.mywebsite.com/?admin</b>. You can only access the the portions of the admin panel that you have permission to (See <a href="#4"><em>Managing Users</em></a>).</p>
+
+<h2>The Admin Log</h2>
+<p>There is a log placed on the top of the Administration panel main page. This log is useful for saving bits of information for later or to communicate little details between users in the system. The log visibility and dimensions can be modified by editing the <b>.logdiv</b> class in your CSS stylesheet. To hide this from the admin panel, all you need to do is add this to your stylesheet:<br />
+<code>.logdiv { display: none; }</code></p>
+
+<h2>Changing System Settings</h2>
+<p>If you have the proper permissions, you will see the link to change the System Settings under the Administration section of the Admin Panel. These settings control the general behavior and output of your website, including the title, meta tags, and various formatting options. Each option contains a short description on what that setting affects.</p>
+
+<!--
+<h2>Managing Files</h2>
+<p>The file manager is currently being modified, and the documentation for it is not complete.</p>
+-->
+</div>
+
+
+<div class="header" title="Setting up other users to use your site" onclick="toggle('d4')"><h1><a name="4">Managing Users</a></h1></div>
+
+
+<div class="content" id="d4">
+
+<h2>Creating and Editing Users</h2>
+
+<p>As the default administrator, you have the power to create new users and control what pieces of the interface that they have access to. From the Administration Panel, you can click on Add New or Manage Users to add or edit users. When you create a new user, you must provide a <b>username, email address,</b> and <b>password</b> (there are no restrictions placed on the length or complexity of the passwords you create, but longer tedious passwords are more secure).</p>
+
+<h3>Permissions</h3>
+<ul>
+<li><b>Manage System</b> - The user can access and modify the System Settings as well as Manage Files.</li>
+<li><b>Manage Users</b> - The user can add, edit, and delete other users. When this permission is disabled, the user can only modify their own information.</li>
+<li><b>Manage Extensions</b> - The user can add, enable, disable, and delete GDCMS extensions. (As of version 1, GDCMS does not have an extension system).</li>
+<li><b>Manage Categories</b> - The user can add, edit, and delete categories.</li>
+<li><b>Manage Pages</b> - The user can add, edit, and delete pages.</li>
+<li><b>Manage Articles</b> - The user can add, edit, and delete their own articles.</li>
+<li><b>Manage Others' Articles</b> - The user can add, edit, and delete articles created by other users.</li>
+<li><b>Manage Comments</b> - The user can add, edit, and delete comments to pages and articles.</li>
+</ul>
+
+
+<h2>Deleting Users</h2>
+<p>When a user is deleted, the content that the use has created needs to be reassigned to a new user. You have the option to either reassign the content or delete it all along with the user information.</p>
+
+</div>
+
+<div class="header" title="Learn to create and customize your menus" onclick="toggle('d5')"><h1><a name="5">Using Menus</a></h1></div>
+
+
+<div class="content" id="d5">
+
+GDCMS can create dynamic menus that give you extra options in organizing and displaying information on your site. Instead of hard-coding your own menu into your template, all it takes is one tag to include a navigational (or other purpose) menu for your site. 
+<h2>Creating Menus</h2>
+When you create a menu, you must first give it a <b>name</b> and a <b>title</b>. The menu's name will be used to when calling the menu in your template. The title will be used in the menu for everyone to see (eg. the default menu's name is <b>main</b>, while it's title is <b>Navigation</b>, which is shown at the top of the menu).
+<p>Next, You add and fill in the fields to create menu items. Every columns has two fields. The first field is the <b>name</b> of the menu item, and the second field is the <b>URL</b> of the item. </p>
+
+<h2>Adding Menus to Your Template</h2>
+<p>To use a dynamic menu in your template, simply include this PHP tag:</p>
+<code>&lt;?php menu('####'); ?&gt;</code>
+<p>Simply replace '####' with the name of the menu you want to include. The default GDCMS menu is <strong>main</strong>, and in the default template the code is:</p>
+<code>&lt;?php menu('main'); ?&gt;</code><br />
+
+<h2>Customizing Menus</h2>
+<p>All of the dynamic menus utilize unordered lists and are customizable through css. The name of the menu is turned into a CSS, and can be customized in your stylsheet. You can edit the <strong>main</strong> menu using the following names:</p>
+<code>ul.main<br />
+ul.main #menutitle<br />
+ul.main #active<br />
+ul.main #last<br />
+ul.main #edit</code>
+<p>To customize other menus, just change "main" to the name of the menu you want to use.</p>
+
+</div>
+
+<div class="header" title="Formatting the way your content looks" onclick="toggle('d6')"><h1><a name="6">Managing Articles &amp; Pages</a></h1></div>
+<div class="content" id="d6">
+
+<h2>Formatting List and Content Views</h2>
+<p>The article list and content view can be formatted in the System Settings using HTML and special reference tags to include specific information from articles:</p>
+
+<ul>
+<li><b>[ID]</b> - ID of the article. Useful for creating <a href="http://en.wikipedia.org/wiki/Permalinks">permalinks</a><span class="printonly"> ( http://en.wikipedia.org/wiki/Permalinks )</span> to articles</li>
+<li><b>[SEF_TITLE]</b> - The Search Engine Friendly title of the article. Also useful for creating links to articles.</li>
+<li><b>[TITLE]</b> - The title of the article.</li>
+<li><b>[DATE]</b> - The date that the article was created.</li>
+<li><b>[MODIFIED]</b> - The date that the article was last modified.</li>
+<li><b>[AUTHOR</b>] - The name of the user who created the article.</li>
+<li><b>[EMAIL]</b> - The email address of the user who created the article.</li>
+<li><b>[EDIT]</b> - The edit link to go directly to the Edit Articles Control panel. The link will only appear to loggin in users with the proper permissions to edit the specific article.</li>
+<li><b>[COMMENT]</b> - Will provide a link to the comments section if comments are enabled for the article. Will display "View Comments (#)" when comments already exist, or "Add Comment" when none hase been made yet.</li>
+<li><b>[BODY]</b> - The body of the article.</li>
+<li><b>[C=###]</b> - A customizable comment link intended to be used only in the Content View. Whatever is in "###" will become the link to post a comment in the Content View when comments are allowed for that article.</li>
+</ul>
+
+<h3>Default Formats</h3>
+<ul>
+<li>Default List View Format<br />
+<code>&lt;h1&gt;&lt;a href="?article.[SEF_TITLE]"&gt;[TITLE]&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;by [AUTHOR] at [DATE]&lt;/h2&gt;&lt;p&gt;[BODY]&lt;br /&gt;[COMMENT] [EDIT]&lt;/p&gt;</code></li>
+<li>Default Content View Format<br />
+<code>&lt;h1&gt;[TITLE]&lt;/h1&gt;&lt;h2&gt;by [AUTHOR] at [DATE] [C=C]&lt;/h2&gt;&lt;p&gt;[BODY]&lt;/p&gt; [EDIT]</code></li>
+</ul>
+
+<h2>Adding Content</h2>
+<p>The panel used to create content (pages and articles) are browser-friendly and usable through desktop and mobile browsers. HTML hardcoding is necessary for articles and pages to display properly; GDCMS does not preprocess any content to make it HTML friendly. There is a very simple text editor included in GDCMS by default that can be used to create the most common tags necessary in articles. Some of the added options that are available for you to customize your content are:</p>
+
+<h3>Search Engine Friendly URL</h3>
+<p>Search Engine Friendly URLs are created dynamically from the title, but can be further edited as desired. This will convert titles that include foreign symbols and punctuation into something that can be easily recognized by search engines, and are human-friendly in terms of readibility and reproducibility.</p>
+
+<h3>Keywords</h3>
+<p>Keywords are used in GDCMS's search function to find specific articles and pages. Keywords are also used to replace the default site keywords for the page's META KEYWOARDS.</p>
+
+<h3>Meta Description</h3>
+<p>The meta description is used to replace the default site description for the page's META DESCRIPTION.</p>
+
+<h3>Publishing &amp; Unpublishing Articles</h3>
+<p>Content can be created without it being viewable by the public; an article or pages isn't accessable through GDCMS until it has been published. Articles can be set to be published as soon as the article is created or for a specific date. The publish date is also recognized as the <b>date created</b>. When the <b>Publish Status</b> is set to Set Publish Date, the article will not be viewable until the publish date set for the content has passed. Setting the Publish Status to Not Published will unpublish the content, regardless of the date set.</p>
+<p>Similarly, content can be made to unpublish itself at specific dates. When the <b>Unpublish Status</b> is set to Publish Until, the content will remain published until the date has passed. Setting the Unpublish Status to Keep Alive will keep the article permanently published, regardless of the unpublish date set.</p>
+
+<!--<h2>Including External Documents into Pages</h2>
+-->			
+</div>
+
+
+<div class="header" title="Solving the common issues that come up during installation and setup" onclick="toggle('d7')"><h1><a name="7">Extra Content Areas</a></h1></div>
+<div class="content" id="d7">
+
+<h2>Setting an Extra Content Space</h2>
+<p>Extra Content Spaces are used to add content to the page that are specific to the particular page or process that the user is on. They can be useful to dynamically add content like messages, polls, ads, and other things to specific pages. To create an extra content space in your template, simply add the code:</p>
+<code>&lt;?php extra('&lt;NAME&gt;'); ?&gt;</code>
+<p>Replace <b>&lt;NAME&gt;</b> with the name that you want to assign to the space.</p>
+
+<h2>Adding Extra Content</h2>
+<p>Extra content is added through the admin panel, and has many of the options seen in the content editor. There are a few differences in the options that affect how extra content behaves:</p>
+
+<ul>
+<li><b>Spaces</b> - The spaces that your extra content will be shown in. You can set one piece of extra content to multiple spaces seperated by commas.</li>
+<li><b>Position</b> - When there are multiple pieces of content assigned to a space, they are organized by position in ascending order. So the content in Position 1 will be added to the page <b>BEFORE</b> the content in Position 5.</li>
+<li><b>Appear On...</b> - These options will designate when the extra content is shown. You can select on exactly what pages, articles, categories, and processes the content will display on.</li>
+</ul>
+</div>
+
+
+<div class="header" title="Additional Info" onclick="toggle('footer')"><h1><a name="footer">Additional Info</a></h1></div>
+
+
+<div class="content" id="footer">
+			Bug reports, suggestions, comments, questions: <a href="http://www.gowondesigns.com/">Gowon Designs</a><span class="printonly"> ( http://www.GDCMS.org/community/ )</span>
+			<p><a href="#header">GDCMS Documentation</a>, edited by <a href="http://www.gowondesigns.com/">Gowon Patterson</a><span class="printonly"> ( http://www.gowondesigns.com/ )</span>.</p>
+      <p><a href="http://www.gowondesigns.com/">GDCMS</a><span class="printonly"> ( http://www.gowondesigns.com/ )</span> is licensed under the <a href="http://www.opensource.org/licenses/osl-3.0.php">Open Software License 3.0</a><span class="printonly"> ( http://www.opensource.org/licenses/osl-3.0.php )</span>.<br />
+			<a href="#header">GDCMS Documentation</a> is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a><span class="printonly"> ( http://www.opensource.org/licenses/osl-3.0.php )</span>.<br />
+			Copyright &copy; 2006-10, <a href="http://www.gowondesigns.com">Gowon Designs</a><span class="printonly"> ( http://www.gowondesigns.com/ )</span></p>
+</div>
+<div class="spacer">&nbsp;</div>
+
+</body>
+</html>
