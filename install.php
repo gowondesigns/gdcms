@@ -1,6 +1,6 @@
 <?php
 // GDCMS Installation Script
-define('VER', '0.1.5c');
+define('VER', '1.0.1');
 
 //header
 echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -95,8 +95,7 @@ $q[]="CREATE TABLE `".$p."content` (
   `published` tinyint(1) NOT NULL default '0',
   `unpublish` tinyint(1) NOT NULL default '0',
   `enddate` bigint(14) unsigned NOT NULL,
-  `comments` tinyint(1) NOT NULL default '0',
-  FULLTEXT KEY `content` (`title`,`body`,`description`,`keywords`)
+  `comments` tinyint(1) NOT NULL default '0'
 );";
 
 // Table structure for table `comments`
